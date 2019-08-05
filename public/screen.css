@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: whitesmoke;
+  background-color: rgb(54, 148, 54);
   color: rgb(14, 14, 14);
 }
 
@@ -23,6 +23,36 @@ html {
 
 h1 {
   text-align: center;
+  border: 1rem yellow double;
+  padding: 1rem;
+}
+
+.team-1-name {
+  border: 1rem yellow double;
+  padding: 1rem;
+}
+
+.team-2-name {
+  border: 1rem yellow double;
+  padding: 1rem;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+ul>li>a>img {
+  height: 10rem;
+  width: 12rem;
 }
 
 .teams {
@@ -49,3 +79,9 @@ h1 {
   text-align: center;
   font-size: 5rem;
 }
+
+/* @media(min-width: 200px) and (max-width: 614px) {
+  .team-one {
+    margin-left: 2rem;
+  }
+} */

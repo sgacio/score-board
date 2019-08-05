@@ -1,19 +1,6 @@
-// setting the constants for team two //
-// const teamTwoInput = document.querySelector('.team-2-input')
-
-// const teamTwoName = document.querySelector('.team-2-name')
-
-// const teamTwoScore = document.querySelector('.team-2-score')
-
-// const teamTwoUpdateName = document.querySelector('.update-team-2-name')
-
-// const team2AddButton = document.querySelector('.team-2-add-1-button')
-
-// const team2SubButton = document.querySelector('.team-2-subtract-1-button')
-
 // team 1 functions  and constants //
 const team1UpdateName = () => {
-  console.log('New name was typed into box')
+  console.log('New name was typed into box, button was clicked')
 
   const currentName = document.querySelector('.team-1-name')
 
@@ -42,9 +29,83 @@ const team1SubButton = () => {
   document.querySelector('.team-1-score').textContent = newScore
 }
 
+const team1Add6Button = () => {
+  console.log('Button was clicked')
+
+  const currentScore = document.querySelector('.team-1-score').textContent
+
+  const newScore = parseInt(currentScore) + 6
+
+  document.querySelector('.team-1-score').textContent = newScore
+}
+
+const team1Sub6Button = () => {
+  console.log('Button was clicked')
+
+  const currentScore = document.querySelector('.team-1-score').textContent
+
+  const newScore = currentScore - 6
+
+  document.querySelector('.team-1-score').textContent = newScore
+}
+
 // team 2 functions and constants //
 
+const teamTwoUpdateName = () => {
+  console.log('Name was typed into box, button clicked')
+
+  const currentName = document.querySelector('.team-2-name')
+
+  const team2Input = document.querySelector('.team-2-input')
+
+  currentName.innerHTML = team2Input.value
+}
+
+const team2AddButton = () => {
+  console.log('Button was clicked')
+
+  const currentScore = document.querySelector('.team-2-score').textContent
+
+  const newScore = parseInt(currentScore) + 1
+
+  document.querySelector('.team-2-score').textContent = newScore
+}
+
+const team2SubButton = () => {
+  console.log('Button was clicked')
+
+  const currentScore = document.querySelector('.team-2-score').textContent
+
+  const newScore = currentScore - 1
+
+  document.querySelector('.team-2-score').textContent = newScore
+}
+
+const team2Add6Button = () => {
+  console.log('Button was clicked')
+
+  const currentScore = document.querySelector('.team-2-score').textContent
+
+  const newScore = parseInt(currentScore) + 6
+
+  document.querySelector('.team-2-score').textContent = newScore
+
+}
+
+const team2Sub6Button = () => {
+  console.log('Button was clicked')
+
+  const currentScore = document.querySelector('.team-2-score').textContent
+
+  const newScore = currentScore - 6
+
+  document.querySelector('.team-2-score').textContent = newScore
+}
+
 // team 1 events //
+document
+  .querySelector('.update-team-1-name')
+  .addEventListener('click', team1UpdateName)
 
 document
   .querySelector('.team-1-add-1-button')
@@ -55,7 +116,32 @@ document
   .addEventListener('click', team1SubButton)
 
 document
-  .querySelector('.update-team-1-name')
-  .addEventListener('click', team1UpdateName)
+  .querySelector('.team-1-add-6-button')
+  .addEventListener('click', team1Add6Button)
+
+document
+  .querySelector('.team-1-subtract-6-button')
+  .addEventListener('click', team1Sub6Button)
+
+// team 2 events //
+document
+  .querySelector('.update-team-2-name')
+  .addEventListener('click', teamTwoUpdateName)
+
+document
+  .querySelector('.team-2-add-1-button')
+  .addEventListener('click', team2AddButton)
+
+document
+  .querySelector('.team-2-subtract-1-button')
+  .addEventListener('click', team2SubButton)
+
+document
+  .querySelector('.team-2-add-6-button')
+  .addEventListener('click', team2Add6Button)
+
+document
+  .querySelector('.team-2-subtract-6-button')
+  .addEventListener('click', team2Sub6Button)
 
 document.addEventListener('DOMContentLoaded', () => {})
