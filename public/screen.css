@@ -27,6 +27,14 @@ h1 {
   padding: 1rem;
 }
 
+.hide {
+  display: none;
+}
+
+.you-win {
+  background-color: coral;
+}
+
 .team-1-name {
   border: 1rem yellow double;
   padding: 1rem;
