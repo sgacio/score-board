@@ -15,6 +15,7 @@ const resetButton = () => {
   document.querySelector('.team-2-subtract-6-button').disabled = false
   document.querySelector('.reset-button').classList.add('hide')
   document.querySelector('.team-1-name').classList.remove('you-win')
+  document.querySelector('.team-2-name').classList.remove('you-win')
 }
 
 // team 1 functions  and constants //
